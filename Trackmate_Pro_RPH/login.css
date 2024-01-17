@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("bg2.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292828d6;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+}
+
+h2{
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(252, 252, 5);
+    text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid  rgb(252, 252, 5);;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    transform: translateY(-50%);
+    color:  rgb(252, 252, 5);;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -5px;
+}
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 35px 0 5px;
+    color: rgb(252, 252, 5);;
+}
+
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color:  rgb(252, 252, 5);;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    top: 11px;
+}
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: rgb(252, 252, 5);;
+    display: flex;
+    justify-content: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+
+.forget label a{
+    color:  rgb(252, 252, 5);;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: rgb(6, 6, 6);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.register{
+    font-size: .9em;
+    color: rgb(252, 252, 5);;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a{
+    text-decoration: none;
+    color: rgb(252, 252, 5);
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    text-decoration: none;
+    outline: none;   
+    font-size: 1em;
+    color: rgb(252, 252, 5);
+    font-weight: 600;
+}
